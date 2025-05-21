@@ -1,0 +1,15 @@
+{
+  "name": "glance-actual",
+  "version": "1.0.0",
+  "description": "Glance widget to retrieve budget data from Actual",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actual-app/api": "^25.5.0",
+    "express": "^5.1.0"
+  }
+}
