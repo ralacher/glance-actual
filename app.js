@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3009
+const port = 3000
 
 let api = require('@actual-app/api')
 let budgetId = process.env.BUDGET_ID || ''
