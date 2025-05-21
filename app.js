@@ -45,8 +45,10 @@ app.get('/accounts', async (req, res) => {
             currency: 'USD'
         }).format(account.balance)
     }
-
-    res.send(output)
+    // response should be in format {'accounts': output}
+    res.send({
+        accounts: output
+    })
 })
 
 app.listen(port, () => {
