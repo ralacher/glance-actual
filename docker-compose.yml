@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  glance-actual:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - BUDGET_ID=your-budget-id
+      - SERVER_URL=https://finance.lacher.io
+      - SERVER_PASSWORD=your-password
+      - DATA_DIR=/usr/src/app/data
+    volumes:
+      - ./data:/usr/src/app/data
